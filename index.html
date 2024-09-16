@@ -149,6 +149,42 @@
 		</div>
 
 		<div class="practice">
+			<head>
+   		 <meta charset="UTF-8">
+    		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Form</title>
+<body>
+    <form action="/submit" method="post">
+        <!-- Text Input with Placeholder -->
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Enter your username" required>
+
+        <!-- Email Input with Placeholder and Pattern Attribute -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+        <br><br>
+
+        <!-- Password Input with Placeholder and Minimum Length Attribute -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" minlength="8" required>
+        <br><br>
+
+        <!-- Number Input with Placeholder and Max Attribute -->
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" placeholder="Enter your age" max="120" required>
+        <br><br>
+
+        <!-- Checkbox Input with Label -->
+        <label>
+            <input type="checkbox" name="subscribe" value="newsletter">
+            Subscribe to newsletter
+        </label>
+        <br><br>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+    </form>
+</body>
 
 
 		</div>
